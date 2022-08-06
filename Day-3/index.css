@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin-left:300px;
+}
+
+#box-4{
+    border: 1px solid blue;
+    border-radius:10px;
+}
+
+.box{
+    width: 250px;
+}
+
+#box-3{
+    border: 3px solid blue;
+    box-shadow: 6px 7px 5px #5a5656;
+}
+
+#box-2{
+    transition: all 1s;
+   
+}
+
+#box-2:hover{
+    transform: scale(1.5);
+}
+
+#box-size{
+    border:4px solid black;
+    width:300px;
+    padding:80px;
+    height:50px;
+    overflow-y: scroll;
+    box-sizing:border-box;
+}

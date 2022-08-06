@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav-wrapper {
+            border: 1px solid black;
+            /* display: flex; */
+            background-color: black;
+            margin: 5px;
+            border-radius: 5px;
+            /* align-items: center; */
+          
+  
+        }
+
+        .nav-item {
+            list-style-type: none;
+            /* border: 1px solid yellow; */
+            padding: 15px 25px;
+            cursor: pointer;
+            /* box-sizing: border-box; */
+            color: white;
+            transition: all .2s;
+            display: inline-block;
+        }
+
+        .nav-item:hover {
+            transform: scale(1.5);
+        }
+
+        .search {
+            float: right;
+            /* border:1px solid yellow; */
+            width: 58%;
+        }
+
+        .search input {
+            float: right;
+            margin-right: 15px;
+            height: 30px;
+            width: 210px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="nav-wrapper">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">About</li>
+        <li class="nav-item">Services</li>
+        <li class="nav-item">Contact Us</li>
+        <div class="search">
+            <input type="text" placeholder="Search Google">
+        </div>
+    </ul>
+
+
+
+</body>
+
+</html>
