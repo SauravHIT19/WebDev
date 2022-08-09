@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .signin-container{
+            border: solid black 2px;
+            text-align: center;
+            
+            padding: 20px 20px 20px 20px;
+        }
+        .container{
+            width: 1000px;
+            height: 1000px;
+            margin-top: 250px;
+            margin-left: 150px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-container">
+            <label for="userName">UserName
+            </label>
+            <input type="text" id="userName" value="" placeholder="Enter your username">
+            <label for="userName">Password
+            </label>
+            <input type="password" id="password" value=""  placeholder="Enter your password">
+
+            <button onclick="login()" >Submit</button>
+
+        </div>
+    </div>
+    <script>
+        function login(){
+            let userName = document.getElementById('userName').value;
+          let password = document.getElementById('password').value;
+            document.cookie = 'username='+userName;
+
+        if(userName == 'trideep' && password == 'abcdefgh'){
+            
+            window.location = 'investor.html';
+          }
+          else{
+            document.getElementById('userName').style.border = 'solid red 1px'
+          }
+        }
+    </script>
+</body>
+</html>

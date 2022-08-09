@@ -10,14 +10,18 @@
 </head>
 
 <body>
+    <h1 id="display-name">
+
+    </h1>
     <div class="wrapper">
         <div class="box">
-            <div class="content">
+            <div class="content" id="">
                 <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg"
                     alt="">
                 <p>Vijay Shekhar Sharma</p>
                 <p>Founder & CEO</p>
-                <img class="logo" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg" alt="">
+                <img class="logo"
+                    src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg" alt="">
             </div>
 
         </div>
@@ -26,7 +30,8 @@
                 <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="">
                 <p>Kunal Shah</p>
                 <p>Founder</p>
-                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png" alt="" class="logo">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png" alt=""
+                    class="logo">
             </div>
 
         </div>
@@ -36,7 +41,8 @@
                     alt="">
                 <p>Amrish Rau</p>
                 <p>CEO</p>
-                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="" class="logo">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt=""
+                    class="logo">
             </div>
 
         </div>
@@ -46,11 +52,22 @@
                     alt="">
                 <p>Sampad Swain</p>
                 <p>Co-Founder & CEO</p>
-                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png" alt="" class="logo">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png" alt=""
+                    class="logo">
             </div>
 
         </div>
     </div>
+    <script>
+        var userName = document.cookie;
+        console.log('cookies' + userName);
+        document.getElementById('display-name').innerHTML = 'Welcome '+userName.split('=')[1];
+
+    </script>
+    <script src="script1.js"></script>
+
+
+
 </body>
 
 </html>
